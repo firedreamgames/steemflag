@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+ 
   <title>SteemFlag</title>
+    
   
-  <style type="text/css" id="gwd-lightbox-style">
-    .gwd-lightbox {
-      overflow: hidden;
-    }
+  
   </style>
   <style type="text/css" id="gwd-text-style">
     p {
@@ -78,25 +77,26 @@
       width: 192.591px;
       height: 42.8736px;
       left: 65.8px;
-      top: 10px;
+      top: 20px;
     }
     .gwd-p-1py6 {
       position: absolute;
       width: 192.586px;
-      height: 42.8736px;
+      height: 30px;
       left: 65px;
-      top: 10px;
+      top: 30px;
       text-align: right;
     }
     .gwd-p-9q89 {
       left: 266px;
+	  top:20px;
       font-size: 19px;
       text-align: left;
-      height: 30px;
+      height: 20px;
     }
     .gwd-p-ua35 {
       font-size: 19px;
-      top: 18px;
+      top: 20px;
       left: 66px;
     }
     .gwd-p-1vw5 {
@@ -132,7 +132,7 @@
     }
     .gwd-p-1lw6 {
       top: 90px;
-      left: 420px;
+      left: 960px;
     }
     .gwd-p-4uoh {
       top: 90px;
@@ -154,11 +154,15 @@
       position: absolute;
       left: 15px;
       top: 120px;
-      height: 500px;
-      width: 900px;
       background-image: none;
+	  font-size: 16px;
       background-color: rgb(241, 236, 236);
-      overflow: scroll;
+	  white-space: nowrap;
+	  overflow-x: hidden;
+      overflow-y: scroll;
+	  
+      height: 400px;
+      width: 1300px;
     }
     .gwd-div-t66z {
       position: absolute;
@@ -166,6 +170,7 @@
       left: 20px;
       top: 125px;
       height: 480px;
+      font-size: 16px;
     }
     .gwd-div-176r {
       left: 190px;
@@ -179,8 +184,10 @@
       top: 125px;
     }
     .gwd-div-vubi {
+      height: 380px;
+      width: 80px;
+      left: 1202px;
       top: 5px;
-      left: 620px;
     }
     .gwd-p-6chl {
       left: 967px;
@@ -198,9 +205,9 @@
       top: 157px;
     }
     .gwd-p-1nfh {
-      top: 192px;
-      left: 960px;
       text-align: left;
+      left: 14px;
+      top: 611px;
     }
     .gwd-p-106v {
       left: 1135px;
@@ -211,33 +218,39 @@
       top: 155px;
     }
     .gwd-p-wfcu {
-      top: 192px;
       text-align: left;
-      left: 1130px;
+      top: 612px;
+      left: 185px;
     }
     .gwd-p-zd2y {
-      left: 960px;
       text-align: left;
+      left: 16px;
+      top: 536px;
     }
     .gwd-p-14wq {
-      left: 960px;
       text-align: left;
+      left: 14px;
+      top: 561px;
     }
     .gwd-p-ddui {
-      left: 960px;
       text-align: left;
+      left: 14px;
+      top: 586px;
     }
     .gwd-p-1gzl {
       text-align: left;
-      left: 1130px;
+      top: 536px;
+      left: 185px;
     }
     .gwd-p-5vnq {
       text-align: left;
-      left: 1130px;
+      left: 185px;
+      top: 561px;
     }
     .gwd-p-127v {
       text-align: left;
-      left: 1130px;
+      left: 185px;
+      top: 586px;
     }
     .gwd-input-1cvn {
       top: 0px;
@@ -267,18 +280,24 @@
       top: 52px;
     }
     .gwd-div-1sdo {
-      left: 20px;
       top: 5px;
       overflow: visible;
+      height: 380px;
+      left: 10px;
+      width: 100px;
     }
     .gwd-div-1s47 {
       top: 5px;
       overflow: visible;
-      left: 220px;
+      height: 380px;
+      width: 150px;
+      left: 170px;
     }
     .gwd-div-jhrg {
       top: 5px;
-      left: 420px;
+      height: 380px;
+      width: 100px;
+      left: 1000px;
     }
     .gwd-div-1ivr {
       position: absolute;
@@ -291,18 +310,203 @@
       top: 47px;
     }
     .gwd-p-8p2g {
-      left: 620px;
+      left: 1130px;
     }
     .gwd-div-12av {
-      left: 959px;
-      top: 226px;
+      left: 447px;
+      top: 566px;
     }
+    .gwd-div-14ua {
+      position: absolute;
+      height: 380.085px;
+      font-size: 16px;
+      top: 5px;
+      left: 180px;
+      width: 600px;
+	 
+ 
+  
+    }
+    .gwd-div-huh5 {
+      width: 130px;
+      left: 800px;
+    }
+    .gwd-div-12we {
+      left: 120px;
+      width: 50px;
+    }
+	
+	.ref1{
+	position: absolute;
+	top: 600px;
+		left: 20px;
+      width: 200px;
+	}
+	
+	.loader {
+  border: 5px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 5px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	position :relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+	  height: 80%;
+	  overflow: auto; /* Enable scroll if needed */
+}
+
+#user{
+position: absolute;
+  top: 5px;
+  left: 5px;
+  background:#F9EECF;
+width:250px  
+}
+#power{
+position: absolute;
+  top: 5px;
+  left: 260px;
+  background:#F9EECF;
+	width:100px  
+}
+#status{
+position: absolute;
+  top: 5px;
+  left: 365px;
+  background:#F9EECF;
+	width:100px  
+}
+
+#quantity{
+position: absolute;
+  top: 5px;
+  left: 480px;
+  background:#F9EECF;
+	width:100px  
+}
+
+#percent{
+position: absolute;
+  top: 5px;
+  left: 585px;
+  background:#F9EECF;
+	width:100px  
+}
+
+#SDate {
+		position :relative;
+      font-size: 17px;
+      top: 0px;
+      left: 170px;
+    }
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
   </style>
+  
   
   <script src="https://cdn.steemjs.com/lib/latest/steem.min.js"></script>
 </head>
 
 <body class="document-body">
+
+<div id="SDate">
+    <form >
+      Analysis From:
+      <input type="date" id="Sday" name="Sday" value="2018-01-01">
+    </form>
+  </div>
+
+
+<div class="loader" id="loader"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div id="content" class="modal-content">
+    <span class="close">&times;</span>
+  		<div id="user">
+		</div>
+		
+		<div id="power">
+		</div>
+		
+		<div id="status">
+		</div>
+		
+		<div id="quantity">
+		</div>
+		
+		<div id="percent">
+		</div>
+		  		
+  </div>
+
+</div>
+
+
+
+
   <div is="gwd-pagedeck" class="gwd-page-container" id="pagedeck">
     <div is="gwd-page" id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-div-4iup" data-gwd-width="1600px" data-gwd-height="800px">
       <div class="gwd-page-content page1-content gwd-div-1f24">
@@ -311,60 +515,86 @@
         <div class="gwd-div-o34r" id="div_flager"></div>
         <p class="gwd-p-1py6 gwd-p-ua35" id="tag_flagger">Flagger &nbsp;@</p>
         <input class="gwd-p-1py6 gwd-p-9q89" id="input_flagger">
-        <p class="gwd-p-1vw5 gwd-p-4uoh">Flagged Person Name</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-r1m6">Downvoted %</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1lw6">Flagged Person SP</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-8p2g">Flagged Person Status</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-zd2y">Total % Downvoted</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-1xay gwd-p-14wq">Minnows downvoted</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-1xay gwd-p-1nk3 gwd-p-ddui">Dolphins downvoted</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-1xay gwd-p-1nk3 gwd-p-1nfh">Whales downvoted</p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-h78w gwd-p-1gzl" id="Flag_SBD"></p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-h78w gwd-p-106v gwd-p-5vnq" id="Flag_SBD_min"></p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-h78w gwd-p-106v gwd-p-rqiu gwd-p-127v" id="Flag_SBD_dol"></p>
-        <p class="gwd-p-1vw5 gwd-p-1blb gwd-p-1yv5 gwd-p-pdfc gwd-p-1prq gwd-p-6chl gwd-p-h78w gwd-p-106v gwd-p-rqiu gwd-p-wfcu" id="Flag_SBD_whale"></p>
+        
+       
         <h3 class="gwd-p-1dus" id="txt_fp"></h3>
         <h3 class="gwd-p-1dus gwd-h3-1rsx" id="txt_SP">SP</h3>
         <div class="gwd-div-1oq8" id="main_board">
           <div class="gwd-div-t66z gwd-div-1sdo" id="vic_name"></div>
-          <div class="gwd-div-t66z gwd-div-176r gwd-div-nh41 gwd-div-1s47" id="vic_SBD"></div>
+          <div class="gwd-div-t66z gwd-div-176r gwd-div-nh41 gwd-div-1s47 gwd-div-12we" id="vic_SBD"></div>
+          <div class="gwd-div-t66z gwd-div-176r gwd-div-nh41 gwd-div-1s47 gwd-div-huh5" id="vic_Date"></div>
           <div class="gwd-div-t66z gwd-div-176r gwd-div-nh41 gwd-div-1njd gwd-div-jhrg" id="vic_SP"></div>
           <div class="gwd-div-t66z gwd-div-176r gwd-div-nh41 gwd-div-1njd gwd-div-vubi" id="vic_STAT"></div>
+          <div class="gwd-div-14ua" id="vic_Perm"></div>
         </div>
         <div class="gwd-div-9aej gwd-div-ork4" id="button_div_1">
-          <input id="Start_1" type="button" value=" Get_Stats " class="gwd-input-1ce7" onclick="calculate()">
+          <input id="Start_1" type="button" value=" Calculate " class="gwd-input-1ce7" onclick="search()">
         </div>
         <div class="gwd-div-9aej gwd-div-ork4 gwd-div-12av" id="button_div_2">
-          <input id="Start_2" type="button" value=" Calculate " class="gwd-input-1ce7" onclick="total()">
+      
         </div>
-        <input id="Start_1" type="button" value=" Search Data " class="gwd-input-1ce7" onclick="search()">
+       
         <div class="gwd-div-1ivr" id="vesting_shares"></div>
         <div class="gwd-div-1ivr gwd-div-mrac" id="vesting_fund"></div>
       </div>
     </div>
   </div>
+  <div class="ref1" id="ref">
+  <a id="link" href="#" onclick="total();">Click to see flag data</a>
+  </div>
+  <script >
+  var modal = document.getElementById('myModal');
+  var mod_content=document.getElementById('content');
+  var span = document.getElementsByClassName("close")[0];
   
-<script>
-    steem.api.setOptions({
+  
+  
+  document.body.style.zoom="80%";
+document.getElementById("loader").style.display = "none";
+   steem.api.setOptions({
       url: 'https://api.steemit.com'
     });
 
 
-
+		var SP=[];
+		var SP_cal=[];
+		var STAT=[];
+		var STAT_cal=[];
+		var names=[];
+		var vic_SBD=[];
+		var vic_perc=[];
+		var cont=0;
+		var user=[];
+	var power=[];
+	var status=[];
+	var percent=[];
+		document.getElementById("ref").style.display="none";
 
     function search()
-
+		
      {
-       document.getElementById("vic_name").innerHTML ="";
-       document.getElementById("vic_SBD").innerHTML = "";
-       document.getElementById("txt_fp").innerHTML = "";
-       document.getElementById("vic_SP").innerHTML = "";
-       document.getElementById("vic_STAT").innerHTML ="";
-       document.getElementById("Flag_SBD").innerHTML = "";
-      document.getElementById("Flag_SBD_min").innerHTML = "";
-      document.getElementById("Flag_SBD_dol").innerHTML = "";
-      document.getElementById("Flag_SBD_whale").innerHTML = "";
-       
+	 SP=[];
+		SP_cal=[];
+		STAT=[];
+		STAT_cal=[];
+		names=[];
+		vic_SBD=[];
+		 vic_perc=[];
+		cont=0;
+		user=[];
+	power=[];
+	status=[];
+	percent=[];
+	 document.getElementById("loader").style.display = "block";
+	
+      document.getElementById("vic_name").innerHTML = ("USER"+"<br />");
+      document.getElementById("vic_SBD").innerHTML = ("FLAG"+"<br />");
+      document.getElementById("txt_fp").innerHTML = "";
+      document.getElementById("vic_SP").innerHTML = ("SP"+"<br />");
+      document.getElementById("vic_STAT").innerHTML = ("STATUS"+"<br />");
+      document.getElementById("vic_Date").innerHTML = ("DATE"+"<br />");
+      document.getElementById("vic_Perm").innerHTML = ("...............POST LINK.............."+"<br />");
+
       var vesting_shares, delegated_vesting_shares, received_vesting_shares, total_vesting_shares, total_vesting_fund_steem = null;
       var total_downvote = 0;
       steem.api.getDynamicGlobalProperties(function(err, result) {
@@ -373,16 +603,16 @@
         document.getElementById("vesting_fund").innerHTML = result.total_vesting_fund_steem;
 
       });
-var flagger=document.getElementById("input_flagger").value
+      var flagger = document.getElementById("input_flagger").value
       steem.api.getAccounts([flagger], function(err, response) {
-        console.log(response);
+      
         vesting_shares = response[0].vesting_shares.split(' ')[0];
         delegated_vesting_shares = response[0].delegated_vesting_shares.split(' ')[0];
         received_vesting_shares = response[0].received_vesting_shares.split(' ')[0];
         total_vesting_shares = document.getElementById("vesting_shares").innerHTML;
         total_vesting_fund_steem = document.getElementById("vesting_fund").innerHTML;
 
-        console.log(vesting_shares, delegated_vesting_shares, received_vesting_shares);
+        
         var steem_power = steem.formatter.vestToSteem(vesting_shares, total_vesting_shares, total_vesting_fund_steem);
         var delegated_steem_power = steem.formatter.vestToSteem(received_vesting_shares - delegated_vesting_shares + ' VESTS', total_vesting_shares, total_vesting_fund_steem);
 
@@ -390,117 +620,225 @@ var flagger=document.getElementById("input_flagger").value
 
       });
 
-var flagger=document.getElementById("input_flagger").value
+      var flagger = document.getElementById("input_flagger").value
       steem.api.getAccountHistory(flagger, -1, 10000, function(err, result) {
-        console.log(result.length);
+       
+		calc(result,flagger);
+	 });
+		
+	}	
+		function calc(result,flagger){
+		var vic_name=[];
+		
+			var vic_Perm=[];
+			var vic_Date=[];
+			var selectedDate = document.getElementById('Sday').value;
+       
+
+		
+			var count=0;
         for (let i = 0; i < result.length; i++) {
 
-          if ((result[i][1].op[0] == 'vote') && (result[i][1].op[1].voter = flagger) && (result[i][1].op[1].weight < 0) && (result[i][1].op[1].author != flagger)) {
+          if ((result[i][1].op[0] == 'vote') && (result[i][1].op[1].voter = flagger) && (result[i][1].op[1].weight < 0) && (result[i][1].op[1].author != flagger)&&(result[i][1].timestamp>selectedDate)) {
+			
 
+			
+			vic_name.push(result[i][1].op[1].author+"<br />" );
+			names.push(result[i][1].op[1].author);
+			vic_SBD.push((result[i][1].op[1].weight / 100) + " %" + "<br />");
+           vic_perc.push((result[i][1].op[1].weight / 100) );
 
-
-
-            document.getElementById("vic_name").innerHTML = document.getElementById("vic_name").innerHTML + result[i][1].op[1].author + "<br />";
-
-            document.getElementById("vic_SBD").innerHTML = document.getElementById("vic_SBD").innerHTML + (result[i][1].op[1].weight / 100) + " %" + "<br />";
-
-
+   			var str ="https://steemit.com/@"+result[i][1].op[1].author+"/"+result[i][1].op[1].permlink;
+			var lin=(result[i][1].op[1].permlink).substring(0,70)+".......";
+    
+    			vic_Perm.push( lin.link(str) + "<br />");
+			vic_Date.push(result[i][1].timestamp + "<br />");
+           
+		
           }
+		  
+		
         }
-
-
-      });
-
-
-
+		
+		 document.getElementById("vic_name").innerHTML =  ("USER"+"<br />")+vic_name.join(" ");
+		 document.getElementById("vic_SBD").innerHTML = ("FLAG"+"<br />")+vic_SBD.join(" ");
+		  document.getElementById("vic_Perm").innerHTML = ("...............POST LINK.............."+"<br />")+vic_Perm.join(" ") ;
+		  document.getElementById("vic_Date").innerHTML = ("DATE"+"<br />")+vic_Date.join(" ");
+		  calculate(names)
     }
 
-    function calculate()
+    function calculate(names)
 
-     {
-
+     {				
       var vesting_shares, delegated_vesting_shares, received_vesting_shares, total_vesting_shares, total_vesting_fund_steem = null;
-      var names = document.getElementById("vic_name").innerHTML.split('<br>');
-      var sbd = document.getElementById("vic_SBD").innerHTML.split('<br>');
-      document.getElementById("vic_name").innerHTML = "";
-      document.getElementById("vic_SBD").innerHTML = "";
+	  var SP_total;
+      
+      
+      
       total_vesting_shares = document.getElementById("vesting_shares").innerHTML;
       total_vesting_fund_steem = document.getElementById("vesting_fund").innerHTML;
-      for (let i = 0; i < names.length; i++) {
-
-        steem.api.getAccounts([names[i]], function(err, response) {
-          console.log(response);
-          vesting_shares = response[0].vesting_shares.split(' ')[0];
-          delegated_vesting_shares = response[0].delegated_vesting_shares.split(' ')[0];
-          received_vesting_shares = response[0].received_vesting_shares.split(' ')[0];
-
+	  var l =names.length
+      for (let i = 0; i < l; i++) {
+		
+      steem.api.getAccounts([names[i]], function(err, response) {
+      build_array(i,response,l,names);
+	  });
+	  
+	  }
+}
+        
+		
+		function build_array (i,response,l,names){
+		
+		var total_vesting_shares = document.getElementById("vesting_shares").innerHTML;
+      	var total_vesting_fund_steem = document.getElementById("vesting_fund").innerHTML;
+		
+		var vesting_shares = response[0].vesting_shares.split(' ')[0];
+        var delegated_vesting_shares = response[0].delegated_vesting_shares.split(' ')[0];
+        var received_vesting_shares= response[0].received_vesting_shares.split(' ')[0];
+		
 
           var steem_power = steem.formatter.vestToSteem(vesting_shares, total_vesting_shares, total_vesting_fund_steem);
           var delegated_steem_power = steem.formatter.vestToSteem(received_vesting_shares - delegated_vesting_shares + ' VESTS', total_vesting_shares, total_vesting_fund_steem);
-          document.getElementById("vic_name").innerHTML = document.getElementById("vic_name").innerHTML + names[i] + "<br />";
-          document.getElementById("vic_SBD").innerHTML = document.getElementById("vic_SBD").innerHTML + sbd[i] + "<br />";
-
-          document.getElementById("vic_SP").innerHTML = document.getElementById("vic_SP").innerHTML + (steem_power + delegated_steem_power).toFixed(2) + "<br />";
+        	
+		 SP[i]=((steem_power + delegated_steem_power).toFixed(2) + "<br />");
+		 SP_cal[i]=((steem_power + delegated_steem_power).toFixed(2));
+		 //document.getElementById("vic_SP").innerHTML = document.getElementById("vic_SP").innerHTML+((steem_power + delegated_steem_power).toFixed(2) + "<br />");
+		 
 
           if ((steem_power + delegated_steem_power) < 20000) {
-            document.getElementById("vic_STAT").innerHTML = document.getElementById("vic_STAT").innerHTML + "minnow" + "<br />";
-
-
+           //document.getElementById("vic_STAT").innerHTML = document.getElementById("vic_STAT").innerHTML+ ("minnow" + "<br />");
+			STAT[i]=("minnow" + "<br />");
+			STAT_cal[i]=("minnow");
           }
           if (((steem_power + delegated_steem_power) < 200000) && ((steem_power + delegated_steem_power) >= 20000)) {
-            document.getElementById("vic_STAT").innerHTML = document.getElementById("vic_STAT").innerHTML + "dolphin" + "<br />";
-
+           //document.getElementById("vic_STAT").innerHTML = document.getElementById("vic_STAT").innerHTML+("dolphin" + "<br />");
+		STAT[i]=("dolphin" + "<br />");
+		STAT_cal[i]=("dolphin");
           }
 
           if ((steem_power + delegated_steem_power) >= 200000) {
-            document.getElementById("vic_STAT").innerHTML = document.getElementById("vic_STAT").innerHTML + "whale" + "<br />";
-
+           // document.getElementById("vic_STAT").innerHTML = document.getElementById("vic_STAT").innerHTML+("whale" + "<br />");
+		STAT[i]=("whale" + "<br />");	
+		STAT_cal[i]=("whale");
           }
-
-
-
-        });
-
-
-
-
+		 
+		  if (i=l){
+		  
+		  	document.getElementById("vic_SP").innerHTML = ("SP"+"<br />")+SP.join(" ");
+			document.getElementById("vic_STAT").innerHTML = ("STATUS"+"<br />")+STAT.join(" ");
+			document.getElementById("loader").style.display = "none";
+			document.getElementById("ref").style.display="block";
+			
+		
+		  }
+		  
+		   
       }
-    }
+	  
+    
 
     function total() {
-      var min_flag = 0;
-      var dol_flag = 0;
-      var wha_flag = 0;
-      var SBD = document.getElementById("vic_SBD").innerHTML.split('<br>');
-      var STAT = document.getElementById("vic_STAT").innerHTML.split('<br>');
+	var str=[];
+	var quantity=[];
+	var qua=[];
+	user=[];
+	power=[];
+	var status=[];
+	percent=[];
+	var ind=0;
 
-      for (let i = 0; i < SBD.length; i++) {
-        if (STAT[i] == "minnow") {
-          min_flag = min_flag + parseInt(SBD[i].split(" ")[0]);
+	 for (let i = 0; i < names.length; i++) {
+	 quantity[i]=1;
+	  for (let j = i+1; j < names.length; j++) {
+	 if(names[i]==names[j]){
+	 names[j]="delete";
+	 vic_perc[i]=	 (vic_perc[i]+vic_perc[j]);
+	vic_perc[j]=0;
+	quantity[i]++;	
+	 }
+	 
+	 }
+	 
+	  }
+	  
+	  for (let i = 0; i < names.length; i++) {
+	   if(names[i] !="delete"){
+	  user[ind]=names[i];
+	  power[ind]=SP_cal[i];
+	  status[ind]=STAT_cal[i];
+	  qua[ind]=quantity[i];
+	  percent[ind]=vic_perc[i];
+	  ind++;
+	  }
+	  
+	}
 
-        }
-        if (STAT[i] == "dolphin") {
-          dol_flag = dol_flag + parseInt(SBD[i].split(" ")[0]);
+	  for (let i = 0; i < user.length; i++) {
+	   
+	    for (let j = i+1; j < user.length; j++) {
+	   if (qua[i]<qua[j]){
+	   	var q=qua[i];
+		var u=user[i];
+		var s=status[i];
+		var p=percent[i];
+		var pow=power[i];
+		qua[i]=qua[j];
+		user[i]=user[j];
+		status[i]=status[j];
+		percent[i]=percent[j];
+		power[i]=power[j];
+		
+		qua[j]=q;
+		user[j]=u;
+		status[j]=s;
+		percent[j]=p;
+		power[j]=pow;
+		
+	   }
+	   
+	   
+	   }
+	   
+	   
+	  }
+	 
+	  modal.style.display = "block";
+	  document.getElementById("user").innerHTML =("User"+"<br />");
+	  document.getElementById("power").innerHTML =("User SP"+"<br />");
+	  document.getElementById("status").innerHTML =("User Status"+"<br />");
+	  document.getElementById("quantity").innerHTML =("Times Flagged"+"<br />");
+	  document.getElementById("percent").innerHTML =("Total Flag %"+"<br />");
+	  
+	 for (let i = 0; i < user.length; i++) {
+	document.getElementById("user").innerHTML =document.getElementById("user").innerHTML+ user[i]+ "<br />";
+	document.getElementById("power").innerHTML =document.getElementById("power").innerHTML+ power[i]+ "<br />";
+	document.getElementById("status").innerHTML =document.getElementById("status").innerHTML+ status[i]+ "<br />";
+	document.getElementById("quantity").innerHTML =document.getElementById("quantity").innerHTML+ qua[i]+ "<br />";
+	document.getElementById("percent").innerHTML =document.getElementById("percent").innerHTML+ percent[i]+ "<br />";
+		 }
+	
+	
+	
+	
+}
+      
 
-        }
-
-        if (STAT[i] == "whale") {
-          wha_flag = wha_flag + parseInt(SBD[i].split(" ")[0]);
-
-        }
-
-
-
-      }
-
-      document.getElementById("Flag_SBD").innerHTML = (min_flag + dol_flag + wha_flag) + " %";
-      document.getElementById("Flag_SBD_min").innerHTML = (min_flag) + " %";
-      document.getElementById("Flag_SBD_dol").innerHTML = (dol_flag) + " %";
-      document.getElementById("Flag_SBD_whale").innerHTML = (wha_flag) + " %";
-
-
+     
+span.onclick = function() {
+    modal.style.display = "none";
+}	  
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
     }
+}
+   
   </script>
 </body>
-
+<footer>
+ <div class="footer">
+  <p>@FireDream</p>
+</div>
+</footer>
 </html>
