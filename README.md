@@ -100,3 +100,91 @@ The project needs contribution on
 * Timeslot selection to see daily, weekly or any time  performance of downvote.
 
 Task requests will be opened on these 3 issues.
+
+
+### New Features Added
+
+#### 1. Async. function problem solved.
+* BEFORE 
+
+The project was working manually due to async function problem in Steem.js API.
+3 buttons to be used simultaneously visualy confirming data is loaded to div.
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520432841/kyq5bhkyjtqfrw49gnmh.png)
+
+* AFTER
+
+Async. function problem solved with call to external function.
+>var flagger = document.getElementById("input_flagger").value
+      steem.api.getAccounts([flagger], function(err, response) {
+
+The result is sent to an external function.
+No promise or callback used.
+
+>calc(result,flagger);
+	 });
+
+This way the manual operation is cancelled and the DIV is loaded automatically.
+We have the complete RESULT array in CALC function to operate.
+
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520433251/vqw42ueqf6wqrnlgkcsh.png)
+
+Additionally, a "SPINNER" to the upper left corner is added to inform the user he has to wait.
+
+#### 2. Date Selection added.
+
+* BEFORE 
+
+There was no date selection, the data was analysed as from the beginning.
+Hence, there exists a limitation for 10 000 data.
+
+* AFTER
+
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520434207/hhptnqtij4xha3ubajex.png)
+
+Date selector is added to the project.
+With selected date, the data is seperated in FOR loop with IF  statement.
+
+> for (let i = 0; i < result.length; i++) {
+          if ((result[i][1].op[0] == 'vote') && (result[i][1].op[1].voter = flagger) && (result[i][1].op[1].weight < 0) && (result[i][1].op[1].author != flagger)&&(result[i][1].timestamp>selectedDate)) {
+
+With above code, the downvotes "after the selected date" is filtered.
+
+#### 3. Hyperlinks to the downvoted posts added.
+
+* BEFORE
+
+Hyperlinks of the downvoted posts didn't exist.
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520436810/qlryu7js2hyidozvcxnv.png)
+
+
+* AFTER
+
+Hyperlinks are added, so user can see the downvoted posts and comments.
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520434768/s7kc0zn5itpxi9sq0n0o.png)
+>var str ="https://steemit.com/@"+result[i][1].op[1].author+"/"+result[i][1].op[1].permlink;
+			var lin=(result[i][1].op[1].permlink).substring(0,70)+".......";
+
+
+Hyperlinks are limited with 70 characters to fit the DIV.
+
+#### 4. Analysis Modal window added.
+
+* BEFORE
+
+Analysis were limited. 
+
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520435014/jm83t9yuablybmcdrowm.png)
+
+* AFTER
+
+Analysis is shown in a seperate modal window, full sorted from maximum times downvoted user to minimum.
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520435173/hozt8w96ff5qqjkltdha.png)
+The sorting code :
+
+![image.png](https://res.cloudinary.com/hpiynhbhq/image/upload/v1520436176/to1usduj4v80wxamjbzc.png)
+
+### Links
+GitHub : https://github.com/firedreamgames/steemflag
+
+WebPage : https://steemflag.neocities.org
+
